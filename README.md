@@ -59,4 +59,4 @@ The script we wrote can be used to generate an entire dataset of shape models/ge
 ## Equations
 Look at [this file](report.pdf), section (1.3).
 
-We solved the stationary Navier Stokes equations to compute the velcity and pressure fields in every point of the LAAa, allowing us to assess the risk of thrombosis (which is due to blood stagnation, as explained in section [Theoretical framekwork](#theoretical-framework))
+We solved the stationary Navier Stokes equations to compute the velcity and pressure fields in every point of the LAAa, allowing us to assess the risk of thrombosis (which is due to blood stagnation, as explained in section [Theoretical framework](#theoretical-framework))
