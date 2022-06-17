@@ -19,12 +19,16 @@ In the literature, experts have found recurrent features which appear in many ge
 * cauliflower (CF)
 
 ## Goal:
-The goal is anking these four gemoetries in terms of their risk propensity to blood stagnation.
+The goal is ranking these four gemoetries in terms of their risk propensity to blood stagnation using a model-based approach.
 
 ## Shape models
 To produce the meshes, we relied on [GMSH](https://gmsh.info/).
 
-To model the four geometries we used shape models based on [radial basis functions](https://en.wikipedia.org/wiki/Radial_basis_function):
+To model the four geometries we used shape models based on [radial basis functions](https://en.wikipedia.org/wiki/Radial_basis_function).
+
+For each[^2] geometry:
+
+[^2]: the choice for the control points needs to be geometry-specific.
 1.   control points on the initial template mesh are manually selected and saved in a csv file;
 2.   control points on the final mesh are selected and saved  in a csv file;
 3.   using these csv files, the displacements of the control points are computed;
