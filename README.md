@@ -1,6 +1,6 @@
 # Ranking Left Atrial Appendages (LAAs) by risk of thrombosis
 
-## Theoretical background
+## Theoretical framekwork
 [Thrombosis](https://en.wikipedia.org/wiki/Thrombosis) occurs when blood becomes stagnant and forms clots which end up clogging its flow, causing clinical complications such as stroke, heart attack, and serious breathing problems. One region particularly affected by this risk is the Left Atrial Appendage (LAA):
 
 <center>
@@ -17,6 +17,9 @@ In the literature, experts have found recurrent features which appear in many ge
 * windsock (WS)
 * cactus (CS)
 * cauliflower (CF)
+
+## Goal:
+The goal is anking these four gemoetries in terms of their risk propensity to blood stagnation.
 
 ## Shape models
 To produce the meshes, we relied on [GMSH](https://gmsh.info/).
@@ -55,3 +58,5 @@ The script we wrote can be used to generate an entire dataset of shape models/ge
 
 ## Equations
 Look at [this file](report.pdf), section (1.3).
+
+We solved the stationary Navier Stokes equations to compute the velcity and pressure fields in every point of the LAAa, allowing us to assess the risk of thrombosis (which is due to blood stagnation, as explained in section [Theoretical framekwork](#theoretical_framekwork))
