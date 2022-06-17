@@ -37,17 +37,17 @@ These are the RBF used for the 4 models:
 As you can imagine, on a scale from going to the bathroom and forgetting your phone to watching Amber Heard's testimony on repeat, this procedure is one of the most annoyingly boring and irrititating things on that list, since we'd need to *manually* position more than 120 points. To avoid doing so, we automated every possible step:
 
 For each geometry:
-1. Define the position of a suitable number of control points, i.e. we write a .geo file and compile it, to get a .msh file, called $\verb|original_template_*.geo|$ and $\verb|original_template_*.msh|$. For example, the cauliflower should have more control points on the right side, since it is characterized by more spikes in that region with respect to the other geometries.
+1. Define the position of a suitable number of control points, i.e. we write a .geo file and compile it, to get a .msh file, called `original_template_*.geo` and `original_template_*.msh`. For example, the cauliflower should have more control points on the right side, since it is characterized by more spikes in that region with respect to the other geometries.
 
-1. Write another .geo file (called $\verb|modified_template_*.geo|$), positioning the control points to match the final shape.
+1. Write another .geo file (called `modified_template_*.geo`), positioning the control points to match the final shape.
 
 1. Run a python file, which reads the two .geo and the .msh file, extracts the relevant information, such as the location of the control points, and computes the shifts.
 
-1. The same python file then computes the weights of the shape model and applies the radial basis function to all the points contained in $\verb|original_template_*.msh|$.
+1. The same python file then computes the weights of the shape model and applies the radial basis function to all the points contained in `original_template_*.msh`.
 
-1. The same python file writes an entire .geo file (called $\verb|[GEOMETRY_NAME].geo|$), containing the coordinates of the points in the $\verb|original_template_*.msh|$ file, shifted according to the radial basis function.
+1. The same python file writes an entire .geo file (called `[GEOMETRY_NAME].geo`), containing the coordinates of the points in the `original_template_*.msh` file, shifted according to the radial basis function.
 
-1. Finally, we use GMSH to compile the $\verb|[GEOMETRY_NAME].geo|$ file just created and obtain the corresponding $\verb|[GEOMETRY_NAME].msh|$ file, which will be uploaded into the FreeFemm++ code.
+1. Finally, we use GMSH to compile the`[GEOMETRY_NAME].geo` file just created and obtain the corresponding `[GEOMETRY_NAME].msh` file, which will be uploaded into the FreeFemm++ code.
 
 The script we wrote can be used to generate an entire dataset of shape models/geometries, just by adding minor modifications to the basis functions.
 
