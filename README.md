@@ -24,7 +24,9 @@ The goal is ranking these four gemoetries in terms of their risk propensity to b
 ## Shape models
 To produce the meshes, we relied on [GMSH](https://gmsh.info/).
 
-To model the four geometries we used shape models based on [radial basis functions](https://en.wikipedia.org/wiki/Radial_basis_function).
+By far the easiest approach would be to directly and manually position by hand some points which describe the final four geometries and write in such a way the four `.geo` files. The problem with this approach is that it is too "robust", meaning that if we wanted to modify slightly some points in the meshes, we'd need to rewrite from scratch the entire `.geo` files. 
+
+This is why to model the four geometries we used shape models based on [radial basis functions](https://en.wikipedia.org/wiki/Radial_basis_function). 
 
 For each[^2] geometry:
 
