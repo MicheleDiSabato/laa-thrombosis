@@ -91,4 +91,8 @@ It is clear that the ordering with respect to *Index 1* is the same as the one w
 
 [^3]: **Remark**: the *higher* the *Index 1*, the riskier the geometry, while the *lower* the *Index 2*, the riskier the geometry.
 
-We conclude by noting that the ranking strongly depends on the shape produced by the GMSH code. Some inversions in the previous table might occur, but are not unexpected since some papers seem to suggest that the safest geometry is the Chickenwing, while others suggest that the safest is the Windsock (which, indeed, is very similar to the Chickenwing).
+The ranking might change due to:
+1. choice for parameter ϵ
+2. threshold for defining blood as stagnant (by looking at the output of the FreeFem++ code, we chose 0.05556: i.e. if a region of a certain geometry is characterized as having a blood velocity below 0.05556, then we consider that region of the geometry as stagnant) 
+
+Throughout our trials, we noticed that by changing these two variables, cauliflower was always detected as the riskies geometry, but sometimes windsock was classified as the safest one, instead of chicken wing. This was not concerning, since this new ranking is coherent with literature (as in [^1]).
