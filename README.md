@@ -88,3 +88,5 @@ Cauliflower (CF) | 0.842357 | 0.0499455 |
 It is clear that the ordering with respect to *Index 1* is the same as the one with *Index 2*[^3].
 
 [^3]: **Remark**: the *higher* the *Index 1*, the riskier the geometry, while the *lower* the *Index 2*, the riskier the geometry.
+
+We conclude by noting that the ranking strongly depends on the shape produced by the GMSH code. Some inversions in the previous table might occur, but are not unexpected since some papers seem to suggest that the safest geometry is the Chickenwing, while others suggest that the safest is the Windsock (which, indeed, is very similar to the Chickenwing).
