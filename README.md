@@ -72,7 +72,7 @@ The velocity filed obtained by running the [FreeFem++](solver.edp) code are:
 ![](readme_images/CW.png) chicken wing |  ![](readme_images/CF.png) cauliflower
 ![](readme_images/WS.png)  windsock|  ![](readme_images/CS.png) cactus
 
-## Indicators used:
+## Indicators and final ranking:
 We identified two possible indicators:
 * *Index 1*: ratio of still-blood surface over total surface;
 * *Index 2*: average blood velcity normalized with respect to total surface;
