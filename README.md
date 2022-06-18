@@ -84,3 +84,7 @@ Chickenwing (CW) | 0.710269 | 0.0896409 |
 Cactus (CS) | 0.744876 | 0.0803797 |
 Windsock (WS) | 0.788661 | 0.060858 |
 Cauliflower (CF) | 0.842357 | 0.0499455 |
+
+It is clear that the ordering with respect to *Index 1* is the same as the one with *Index 2*[^3].
+
+[^3]: **Remark**: the *higher* the *Index 1*, the riskier the geometry, while the *lower* the *Index 2*, the riskier the geometry.
