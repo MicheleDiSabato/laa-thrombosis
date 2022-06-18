@@ -95,4 +95,4 @@ The ranking might change due to:
 1. choice for parameter ϵ
 2. threshold for defining blood as stagnant (by looking at the output of the FreeFem++ code, we chose 0.05556: i.e. if a region of a certain geometry is characterized as having a blood velocity below 0.05556, then we consider that region of the geometry as stagnant) 
 
-Throughout our trials, we noticed that by changing these two variables, cauliflower was always detected as the riskies geometry, but sometimes windsock was classified as the safest one, instead of chicken wing. This was not concerning, since this new ranking is coherent with literature[^1].
+Throughout our trials, we noticed that by changing these two variables, cauliflower was always detected as the riskies geometry, but sometimes windsock was classified as the safest one, instead of chicken wing. This was not concerning, since this new ranking is coherent with scientific literature[^1].
