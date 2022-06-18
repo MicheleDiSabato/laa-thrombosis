@@ -64,3 +64,23 @@ The script we wrote can be used to generate an entire dataset of shape models/ge
 Look at [this file](report.pdf), section (1.3).
 
 We solved the stationary Navier Stokes equations to compute the velcity and pressure fields in every point of the LAAs, allowing us to assess the risk of thrombosis (which is due to blood stagnation, as explained in section [Theoretical framework](#theoretical-framework))
+
+## Numerical results:
+The velocity filed obtained by running the [FreeFem++](solver.edp) code are:
+|  |  |
+:-------------------------:|:-------------------------:
+![](readme_images/CW.png) chicken wing |  ![](readme_images/CF.png) cauliflower
+![](readme_images/WS.png)  windsock|  ![](readme_images/CS.png) cactus
+
+## Indicators used:
+We identified two possible indicators:
+* *Index 1*: ratio of still-blood surface over total surface;
+* *Index 2*: average blood velcity normalized with respect to total surface;
+
+This is the ranking obtained using the two kind of indices:
+| Geometry | Index 1 | Index 2 | 
+:-------------------------:|:-------------------------:|:-------------------------:
+Chickenwing (CW) | 0.710269 | 0.0896409 |
+Cactus (CS) | 0.744876 | 0.0803797 |
+Windsock (WS) | 0.788661 | 0.060858 |
+Cauliflower (CF) | 0.842357 | 0.0499455 |
