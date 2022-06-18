@@ -5,7 +5,7 @@
 
 <center>
 <img src="readme_images/LAA_heart.PNG"
-     width="400" />
+     width="500" />
 </center>
 
 Because of its position, it is a region prone to blood clots formation caused by the low velocity flow of blood [^1]. 
