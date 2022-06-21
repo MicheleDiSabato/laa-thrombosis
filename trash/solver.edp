@@ -1,7 +1,3 @@
-// File that solve the Navier Stokes stationary in time using a fixed-point method for the
-//different domain: "LAA_CF.msh", "LAA_CW.msh", "LAA_WS.msh", "LAA_CS.msh"
-// In the end, indicators for the probability of formation of a clot are defined, the aim is to classify the domains for the most probable to the less probable
-
 // 1. geometry
 load "gmsh"
 mesh Th = gmshload("LAA_CF.msh"); //load of the mesh

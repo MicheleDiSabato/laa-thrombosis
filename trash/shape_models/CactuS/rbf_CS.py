@@ -1,28 +1,3 @@
-'''
-Function that applies a radial basis function approach to create the Cactus mesh.
-
-Algorithm:
-
-1) Define the position of a suitable number of control points, i.e. we write a .geo file and compile
-it, to get a .msh file, called original_template_*.geo and original_template_*.msh1
-
-2) Write another .geo file (called modified_template_*.geo), positioning the control points to
-match the final shape
-
-3) Run a python file, which reads the two .geo and the .msh file, extracts the relevant information,
-such as the location of the control points, and computes the shifts
-
-4) The same python file then computes the weights of the shape model and applies the radial basis
-function to all the points contained in original_template_*.msh
-
-5) The same python file writes an entire .geo file (called [GEOMETRY_NAME].geo), containing the
-coordinates of the points in the original_template_*.msh file, shifted according to the radial
-basis function
-
-6) Finally, we use GMSH to compile the [GEOMETRY_NAME].geo file just created and obtain the
-corresponding [GEOMETRY_NAME].msh file, which will be uploaded into the FreeFemm++ code
-'''
-
 # Import libraries 
 import meshio
 import os
