@@ -6,7 +6,7 @@
 # Ranking Left Atrial Appendages (LAAs) by risk of thrombosis
 
 ## Theoretical framework
-[Thrombosis](https://en.wikipedia.org/wiki/Thrombosis) occurs when blood becomes stagnant and forms clots which end up clogging its flow, causing clinical complications such as stroke, heart attack, and serious breathing problems. One region particularly affected by this risk is the Left Atrial Appendage (LAA):
+[Thrombosis](https://en.wikipedia.org/wiki/Thrombosis) occurs when blood becomes stagnant and forms clots which end up clogging its flow, causing clinical complications such as strokes, heart attacks and serious breathing problems. One region particularly affected by this risk is the Left Atrial Appendage (LAA):
 
 <center>
 <img src="readme_images/LAA_heart.PNG"
