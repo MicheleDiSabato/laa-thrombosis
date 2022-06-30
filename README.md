@@ -13,7 +13,7 @@
      width="500" />
 </center>
 
-Because of its position, it is a region prone to blood clots formation caused by the low velocity flow of blood [^1]. 
+Because of its position, this region is prone to blood clots formation caused by the low velocity flow of blood [^1]. 
 
 [^1]: https://pubmed.ncbi.nlm.nih.gov/25751618/ and https://www.frontiersin.org/articles/10.3389/fcvm.2018.00034/full 
 
@@ -24,7 +24,7 @@ In the literature, experts have found recurrent features which appear in many ge
 * cauliflower (CF)
 
 ## Goal:
-The goal is ranking these four gemoetries in terms of their risk propensity to blood stagnation using a model-based approach.
+The goal is ranking these four geometries in terms of their risk propensity to blood stagnation using a model-based approach.
 
 ## Shape models
 To produce the meshes, we relied on [GMSH](https://gmsh.info/).
